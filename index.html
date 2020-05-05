@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Ramen Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <header>
+        <h1>Top Ramen Restaurants</h1>
+    </header>
+    <hr>
+    <br>
+    <ul>
+        <li><button id = "showall">Show all</button></li>
+        <li>
+            <select id = "sortby" onchange="sort()">
+                <option disabled hidden selected>Sort By</option>
+                <option>Name</option>
+                <option>Country</option>
+                <option>Stars</option>
+            </select>
+        </li>
+        <li>
+            <select id = "country" onchange="loc()">
+                <option disabled hidden selected>Country</option>
+                <option>All</option>
+                <option>China</option>
+                <option>Hong Kong</option>
+                <option>Indonesia</option>
+                <option>Japan</option>
+                <option>Malaysia</option>
+                <option>Myanmar</option>
+                <option>Singapore</option>
+                <option>South Korea</option>
+                <option>Taiwan</option>
+                <option>USA</option>
+            </select>
+        </li>
+        <li>
+            <select id = "topt" onchange="year()">
+                <option disabled hidden selected>Top Ten of Year</option>
+                <option>None</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+            </select>
+        </li>
+    </ul>
+    <form id = "my-form">
+        <input type="text" id = "name" size = "42" placeholder="Search restaurant by name">
+        <input class="btn" type="submit" value="Search">
+    </form>
+    <br>
+    <div class = "show"></div>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script type = "text/javascript" src="main.js"></script>
+</body>
+</html>
