@@ -1,0 +1,41 @@
+body{
+    background-image: url('../ramen/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 720px;
+    min-width: 1500px;
+    font-size: 17px;
+}
+
+h1{
+    text-align: center;
+    font-family: cursive;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: 530px;
+}
+
+li{
+    display: inline;
+}
+
+.show{
+    width: 500px;
+    margin: 0 570px;
+}
+
+.sho{
+    opacity:0.75;
+}
+
+.sho:hover{
+    opacity:1.25;
+}
+
+#my-form{
+    padding-left: 570px;
+}
