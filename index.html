@@ -14,10 +14,11 @@
     </header>
     <hr>
     <br>
+    <div class = "nav">
     <ul>
-        <li><button id = "showall">Show all</button></li>
+        <li><button id = "showall" class = "dropdown">Show all</button></li>
         <li>
-            <select id = "sortby" onchange="sort()">
+            <select id = "sortby" onchange="sort()" class = "dropdown">
                 <option disabled hidden selected>Sort By</option>
                 <option>Name</option>
                 <option>Country</option>
@@ -25,7 +26,7 @@
             </select>
         </li>
         <li>
-            <select id = "country" onchange="loc()">
+            <select id = "country" onchange="loc()" class = "dropdown">
                 <option disabled hidden selected>Country</option>
                 <option>All</option>
                 <option>China</option>
@@ -41,8 +42,8 @@
             </select>
         </li>
         <li>
-            <select id = "topt" onchange="year()">
-                <option disabled hidden selected>Top Ten of Year</option>
+            <select id = "topt" onchange="year()" class = "dropdown">
+                <option disabled hidden selected>Topten of year</option>
                 <option>None</option>
                 <option>2016</option>
                 <option>2015</option>
@@ -52,13 +53,14 @@
             </select>
         </li>
     </ul>
-    <form id = "my-form">
-        <input type="text" id = "name" size = "42" placeholder="Search restaurant by name">
-        <input class="btn" type="submit" value="Search">
-    </form>
-    <br>
-    <div class = "show"></div>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <div class = "form">
+        <input type="text" id = "name" placeholder=" Search restaurant by name">
+    </div>
+    </div>
+    <br><br>
+    <div class = "show" id = "content">
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
     <script type = "text/javascript" src="main.js"></script>
 </body>
 </html>
