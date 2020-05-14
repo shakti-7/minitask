@@ -1,7 +1,7 @@
 body{
     background-image: url('https://1843magazine.static-economist.com/sites/default/files/styles/article-main-image-overlay/public/201710_FD_RAM_01-header.jpg');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: cover;
     background-attachment: fixed;
     min-height: 720px;
