@@ -1,12 +1,11 @@
 body{
-    background-image: url('https://png.pngtree.com/thumb_back/fh260/back_our/20190619/ourmid/pngtree-clear-noodle-noodle-catering-advertising-poster-background-material-image_138759.jpg');
+    background-image: url('https://1843magazine.static-economist.com/sites/default/files/styles/article-main-image-overlay/public/201710_FD_RAM_01-header.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     min-height: 720px;
-    min-width: 1500px;
-    font-size: 17px;
+    font-size: 18px;
 }
 
 h1{
@@ -16,26 +15,71 @@ h1{
 
 ul{
     list-style-type: none;
-    margin-left: 530px;
+    padding-left: 0;
+    margin-bottom: 3px;
 }
 
 li{
     display: inline;
+    margin-left: 0;
 }
 
 .show{
-    width: 500px;
-    margin: 0 570px;
+    width: 40%;
+    margin: 0 5%;
 }
 
 .sho{
-    opacity:0.75;
+    opacity:0.8;
 }
 
 .sho:hover{
-    opacity:1.25;
+    opacity:1.2;
 }
 
-#my-form{
-    padding-left: 570px;
+input{
+    width: 450px;
+    background-color: darkslategray;
+    border: 2px inset gray;
+    padding-top: 0;
+}
+
+.nav{
+    margin: 0 5%;
+}
+
+.dropdown{
+    height: 22px;
+    width: 110px;
+    background-color: darkslategrey;
+    color: white;
+    border: 2px gray inset;
+}
+
+::placeholder{
+    color: white;
+}
+
+@media(max-width: 750px){
+    body{
+        background-color: whitesmoke;
+        background-image: none;
+    }
+    .show,.nav{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .show,.nav{
+        width: 80%;
+    }
+    li{
+        display: block;
+    }
+    ul{
+        margin-bottom: 1px;
+    }
+    input,.dropdown{
+        width: 100%;
+        margin-top: 10px;
+    }
 }
