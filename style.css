@@ -17,6 +17,8 @@ ul{
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 3px;
+    background-color: darkslategray;
+    width: 454px;
 }
 
 li{
@@ -78,6 +80,8 @@ input{
     }
     ul{
         margin-bottom: 1px;
+        background-color: initial;
+        width: 100%;
     }
     input,.dropdown{
         width: 100%;
