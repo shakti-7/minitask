@@ -1,89 +1,66 @@
-body{
-    background-image: url('https://1843magazine.static-economist.com/sites/default/files/styles/article-main-image-overlay/public/201710_FD_RAM_01-header.jpg');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 720px;
-    font-size: 18px;
-}
-
-h1{
-    font-family: cursive;
-    text-align: center;
-}
-
-ul{
-    list-style-type: none;
-    padding-left: 0;
-    margin-bottom: 3px;
-}
-
-li{
-    display: inline;
-    margin-left: 0;
-}
-
-.show{
-    width: 40%;
-    margin: 0 5%;
-}
-
-.sho{
-    opacity:0.8;
-}
-
-.sho:hover{
-    opacity:1.2;
-}
-
-input{
-    width: 445.5px;
-    background-color: darkslategray;
-    border: 2px inset gray;
-    padding-top: 0;
-    padding-left: 5px;
-    padding-right: 0;
-    color: white;
-}
-
-.nav{
-    margin: 0 5%;
-}
-
-.dropdown{
-    height: 22px;
-    width: 110px;
-    background-color: darkslategrey;
-    color: white;
-    border: 2px gray inset;
-}
-
-::placeholder{
-    color: white;
-}
-
-@media(max-width: 750px){
-    body{
-        background-color: whitesmoke;
-        background-image: none;
-    }
-    .show,.nav{
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 80%;
-    }
-    li{
-        display: block;
-    }
-    ul{
-        margin-bottom: 1px;
-    }
-    input,.dropdown{
-        width: 100%;
-        margin-top: 10px;
-    }
-    input{
-        padding-left: 0;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" >
+    <title>Ramen Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+    <header>
+        <h1>Top Ramen Restaurants</h1>
+    </header>
+    <hr>
+    <br>
+    <div class = "nav">
+    <ul>
+        <li><button id = "showall" class = "dropdown">Show all</button></li>
+        <li>
+            <select id = "sortby" onchange="sort()" class = "dropdown">
+                <option disabled hidden selected>Sort By</option>
+                <option>Name</option>
+                <option>Country</option>
+                <option>Stars</option>
+            </select>
+        </li>
+        <li>
+            <select id = "country" onchange="loc()" class = "dropdown">
+                <option disabled hidden selected>Country</option>
+                <option>All</option>
+                <option>China</option>
+                <option>Hong Kong</option>
+                <option>Indonesia</option>
+                <option>Japan</option>
+                <option>Malaysia</option>
+                <option>Myanmar</option>
+                <option>Singapore</option>
+                <option>South Korea</option>
+                <option>Taiwan</option>
+                <option>USA</option>
+            </select>
+        </li>
+        <li>
+            <select id = "topt" onchange="year()" class = "dropdown">
+                <option disabled hidden selected>Top 10 of year</option>
+                <option>None</option>
+                <option>2016</option>
+                <option>2015</option>
+                <option>2014</option>
+                <option>2013</option>
+                <option>2012</option>
+            </select>
+        </li>
+    </ul>
+    <div class = "form">
+        <input type="text" id = "name" placeholder="Search restaurant by name">
+    </div>
+    </div>
+    <br>
+    <div class = "show" id = "content">
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"> </script>
+    <script type = "text/javascript" src="main.js"></script>
+</body>
+</html>
