@@ -9,8 +9,8 @@ body{
 }
 
 h1{
-    text-align: center;
     font-family: cursive;
+    text-align: center;
 }
 
 ul{
@@ -38,10 +38,13 @@ li{
 }
 
 input{
-    width: 450px;
+    width: 445.5px;
     background-color: darkslategray;
     border: 2px inset gray;
     padding-top: 0;
+    padding-left: 5px;
+    padding-right: 0;
+    color: white;
 }
 
 .nav{
@@ -68,8 +71,6 @@ input{
     .show,.nav{
         margin-left: 10%;
         margin-right: 10%;
-    }
-    .show,.nav{
         width: 80%;
     }
     li{
@@ -81,5 +82,8 @@ input{
     input,.dropdown{
         width: 100%;
         margin-top: 10px;
+    }
+    input{
+        padding-left: 0;
     }
 }
