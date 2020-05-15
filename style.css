@@ -22,7 +22,7 @@ ul{
 }
 
 li{
-    display: inline;
+    display: inline-block;
     margin-left: 0;
 }
 
