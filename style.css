@@ -17,18 +17,18 @@ ul{
     list-style-type: none;
     padding-left: 0;
     margin-bottom: 3px;
-    width: 454px;
     background-color: darkslategray;
+    width: 454px;
 }
 
 li{
-    display: inline-block;
     margin-left: 0;
+    display: inline;
 }
 
 .show{
     width: 40%;
-    margin: 0 4%;
+    margin: 0 3.5%;
 }
 
 .sho{
@@ -50,15 +50,15 @@ input{
 }
 
 .nav{
-    margin: 0 4%;
+    margin: 0 3.5%;
 }
 
 .dropdown{
-    height: 22px;
     width: 110px;
     background-color: darkslategrey;
     color: white;
-    border: 2px gray inset;
+    border: 0;
+    height: 22px;
 }
 
 ::placeholder{
