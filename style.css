@@ -59,7 +59,6 @@ input{
     color: white;
     border: 0;
     height: 22px;
-    border: 2px grey inset;
 }
 
 ::placeholder{
