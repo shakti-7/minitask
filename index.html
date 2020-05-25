@@ -17,14 +17,7 @@
     <div class = "nav">
     <ul>
         <li><button id = "showall" class = "dropdown">Show all</button></li>
-        <li>
-            <select id = "sortby" onchange="sort()" class = "dropdown">
-                <option disabled hidden selected>Sort By</option>
-                <option>Name</option>
-                <option>Country</option>
-                <option>Stars</option>
-            </select>
-        </li>
+        
         <li>
             <select id = "country" onchange="loc()" class = "dropdown">
                 <option disabled hidden selected>Country</option>
@@ -52,9 +45,17 @@
                 <option>2012</option>
             </select>
         </li>
+        <li>
+            <select id = "sortby" onchange="sort()" class = "dropdown">
+                <option disabled hidden selected>Sort By</option>
+                <option>Name</option>
+                <option>Country</option>
+                <option>Stars</option>
+            </select>
+        </li>
     </ul>
     <div class = "form">
-        <input type="text" id = "name" placeholder="Search restaurant by name">
+        <input type="text" id = "name" placeholder="Search restaurant by name...">
     </div>
     </div>
     <br>
