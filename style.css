@@ -68,7 +68,7 @@ input{
 @media(max-width: 750px){
     body{
         background-color: whitesmoke;
-        background-image: url('https://1843magazine.static-economist.com/sites/default/files/styles/article-main-image-overlay/public/201710_FD_RAM_01-header.jpg');
+        background-image: none;
     }
     .show,.nav{
         margin-left: 10%;
