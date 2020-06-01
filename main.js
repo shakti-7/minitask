@@ -51,7 +51,7 @@ function make(i){
         stars.innerHTML = "No rating available";
     }else{
         for(j=0;j<Math.floor(dat[i].Stars);j++){
-           stars.innerHTML = stars.innerHTML + '<i class="fa fa-star"></i>';
+           stars.innerHTML = stars.innerHTML + '<i class="fa fa-star-o"></i>';
         }
     }
     div1.appendChild(stars);
