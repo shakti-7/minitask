@@ -74,9 +74,9 @@ function make(i){
         topten.innerHTML = "No. " + dat[i].TopTen[6] + " in " + dat[i].TopTen[0] + dat[i].TopTen[1] + dat[i].TopTen[2] + dat[i].TopTen[3];
     }
     div1.appendChild(topten);
-    var line = document.createElement('hr');
-    div1.appendChild(line);
     disp.appendChild(div1);    
+    var line = document.createElement('hr');
+    disp.appendChild(line);
 }
 
 all.addEventListener('click',function(){
